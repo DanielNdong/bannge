@@ -2,16 +2,8 @@ import { Inter } from "next/font/google";
 import Navigation from "../Components/Navigation";
 import Head from "next/head";
 
- // import Font Awesome CSS
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
-config.autoAddCss = false;
-
-
-
 
 import "./globals.css";
-import "./css/header.css";
 
 
 export const metadata = {
@@ -24,11 +16,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">     
+    <html lang="en">  
       <body>            
           <Navigation />
-          
-
           {children}
           <footer>
             Footer
