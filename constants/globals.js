@@ -4,24 +4,20 @@ export const BANGE_URLS = {
 
 export const SOCIAL_ICONS = [
     {
-        img: "twitterImgPath",
-        name: "twitterIcon",
-        url: 'urlPath',
+        path: "/icons/brand-twitter.svg",
+        name: "twitterIcon"      
     },
     {
-        img: "facebookImgPath",
-        name: "facebookIcon",
-        url: 'urlPath',
+        path: "/icons/brand-facebook.svg",
+        name: "facebookIcon"      
     },
     {
-        img: "youtubeImgPath",
-        name: "youtubeIcon",
-        url: 'urlPath',
+        path: "/icons/brand-youtube.svg",
+        name: "youtubeIcon"      
     },
     {
-        img: "instagramImgPath",
-        name: "instagramIcon",
-        url: 'urlPath',
+        path: "/icons/brand-instagram.svg",
+        name: "instagramIcon"      
     },
     
 ]
