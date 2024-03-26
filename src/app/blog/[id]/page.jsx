@@ -6,7 +6,6 @@ import React from 'react'
 import { BLOG as listBlog } from '../../../../constants/content';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import MainBlog from "@/Components/MainBlog";
-import LayoutBlog from './layout';
 
 function BlogDetails({ params }) {
 
@@ -19,10 +18,10 @@ function BlogDetails({ params }) {
   })
     
   return (
-      <LayoutBlog className='container m-auto'>
+      <div className='container m-auto'>
       {blog.map(
         (item, key) => (
-        <div key={key} style={{paddingTop: "13rem"}}>
+        <div key={key} style={{paddingTop: "2rem"}}>
            <SmallSubtitle>BlogDetails</SmallSubtitle>
            <Text className="my-3">{item.date}</Text>
            <Image src={item.img} width="600" height="600" alt={item.title}/>
@@ -31,9 +30,10 @@ function BlogDetails({ params }) {
         </div>
       )
      )}
-     <section> 
+     <section>
+        <MainBlog />
       </section>
-    </LayoutBlog>
+    </div>
   )
 }
 

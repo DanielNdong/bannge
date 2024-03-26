@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Link } from "next/link";
+import Link from "next/link";
 
  function LayoutBlog({ children }) {
   return (
@@ -20,5 +20,5 @@ import { Link } from "next/link";
     </div>
   )
 }
+export default LayoutBlog; 
 
-export default LayoutBlog
