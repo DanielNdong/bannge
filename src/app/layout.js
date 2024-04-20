@@ -4,6 +4,7 @@ import Head from "next/head";
 
 
 import "./globals.css";
+import "./main.css";
 
 
 export const metadata = {
